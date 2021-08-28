@@ -4,9 +4,10 @@ def main():
     ingresos = float(input("Dame los ingresos: "))
     egresos = float(input("Dame los egresos: "))
     cheques = int(input("Dame el numero de cheques: "))
-    saldo = (mes) + (ingresos) - (egresos) + (cheques * 13)
-    saldo = (saldo) * (92.5)
-    print("saldo final de la cuenta:", saldo)
+    saldo = mes + ingresos - ((egresos) + (cheques * 13))
+    total = saldo * 0.925
+
+    print("saldo final de la cuenta:", total)
 
 
 
